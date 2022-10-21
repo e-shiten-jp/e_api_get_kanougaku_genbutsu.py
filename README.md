@@ -1,11 +1,9 @@
 # e_api_get_kanougaku_genbutsu.py
-ｅ支店APIで、現物可能額を取得する。
+機能：ｅ支店APIで、現物可能額を取得する。
 
 ファイル名: e_api_get_kanougaku_genbutsu.py
 
 APIバージョン： v4r3で動作確認
-
-機能：ｅ支店APIでの主な一覧の取得。
 
 ご注意！！ ================================
 
