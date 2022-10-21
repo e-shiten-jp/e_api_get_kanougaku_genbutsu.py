@@ -393,9 +393,9 @@ def func_logout(int_p_no, class_cust_property):
 
 
 # --------------------------
-# 可能額取得
-# 引数：class_cust_property（request通番）, 口座属性クラス
-def func_kanougaku(int_p_no, class_cust_property):
+# 現物 買い付け 可能額取得
+# 引数：p_no, 口座属性クラス
+def func_kanougaku_genbutsu(int_p_no, class_cust_property):
     # 送信項目の解説は、マニュアル「立花証券・ｅ支店・ＡＰＩ（ｖ〇）、REQUEST I/F、機能毎引数項目仕様」
     # p10/43 No.10 引数名:CLMZanKaiKanougaku を参照してください。
 
@@ -499,7 +499,7 @@ if bool_login :
     print()
     print('-- 買余力の照会 -------------------------------------------------------------')
     int_p_no = int_p_no + 1
-    json_return = func_kanougaku(int_p_no, class_cust_property)
+    json_return = func_kanougaku_genbutsu(int_p_no, class_cust_property)
     # 戻り値の解説は、マニュアル「立花証券・ｅ支店・ＡＰＩ（ｖ〇）、REQUEST I/F、機能毎引数項目仕様」
     # p10/43 No.10 引数名:CLMZanKaiKanougaku を参照してください。
     
